@@ -1,0 +1,91 @@
+<!Doctype html>
+<html>
+    <head>
+        <title> NORTHCAPE 4000</title>
+        <style>
+            body {
+                background-image: url('./background_image.jpg');
+                background-repeat: repeat;
+                background-position: center center;
+                background-size: auto 100vh;
+                background-attachment: fixed;
+                color: #222;
+                font-family: 'Segoe UI', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+            }
+            .container {
+                background: rgba(255,255,255,0.85);
+                max-width: 600px;
+                margin: 40px auto;
+                border-radius: 12px;
+                box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+                padding: 32px;
+                text-align: center;
+            }
+            h1 {
+                color: #1a4d7a;
+                margin-bottom: 16px;
+            }
+            button {
+                background: #1a4d7a;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                padding: 10px 24px;
+                font-size: 1rem;
+                cursor: pointer;
+                margin: 8px 0;
+                transition: background 0.2s;
+            }
+            button:hover {
+                background: #2566a8;
+            }
+            a.lnk button {
+                margin-top: 8px;
+            }
+            .italic-text {
+                 font-style: italic;
+                 color: red; /* Or any other color you want */
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Olli's NorthCape 4000!!</h1>
+            <strong>Finding Olli:</strong>
+                <a href="https://www.komoot.com/live/ODQ4MjI0OTg5MTk2OjE3NTQ5NzI4MjI1NzdfV3BDOU4=" target="_blank"><button>Track me</button></a> 
+             <p><i class="italic-text">Tracking link is updated every day </i></p>
+            <p>
+                <strong>Fundraiser link:</strong>
+                <a href="https://www.kinderkrebsstiftung.de/spenden-helfen/spendenaktion/?cfd=ca6dr" target="_blank"><button>Kinderkrebsstiftung</button></a>
+            </p>            
+            <strong> Where was Olli:</strong>
+                <a href="./history.html" target="_blank"><button>History</button></a>
+            <br><br>
+
+            <p> For more information about the event: <a href="https://northcape4000.com/" target="_blank">Official NorthCape 4000 website</a>.</p>
+        </div>
+        <!--script>
+            fetch('/data')
+                .then(response => response.json())
+                .then(data => {
+                    lk = data['link']
+                    console.log(typeof(lk))
+                    console.log(JSON.parse(lk))
+                    js = JSON.parse(lk)
+                    lk = js['track']
+                    if (lk) {
+                        document.getElementById('trackLink').setAttribute('href',lk);
+                    } else {
+                        document.getElementById('trackLink').setAttribute('href', "#");
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('trackLink').setAttribute('href', "#");
+                    console.error('Error:', error);
+                });
+    </script-->
+    </body>
+</html>
